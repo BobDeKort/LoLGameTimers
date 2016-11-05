@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4E76B8F1DCE75E7009EC7CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E76B8E1DCE75E7009EC7CC /* AppDelegate.swift */; };
+		C4E76B911DCE75E7009EC7CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E76B901DCE75E7009EC7CC /* ViewController.swift */; };
+		C4E76B941DCE75E7009EC7CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E76B921DCE75E7009EC7CC /* Main.storyboard */; };
+		C4E76B961DCE75E7009EC7CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E76B951DCE75E7009EC7CC /* Assets.xcassets */; };
+		C4E76B991DCE75E7009EC7CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E76B971DCE75E7009EC7CC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C4E76B8B1DCE75E7009EC7CC /* LoLGameTimers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoLGameTimers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4E76B8E1DCE75E7009EC7CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4E76B901DCE75E7009EC7CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4E76B931DCE75E7009EC7CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4E76B951DCE75E7009EC7CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4E76B981DCE75E7009EC7CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4E76B9A1DCE75E7009EC7CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4E76B881DCE75E7009EC7CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4E76B821DCE75E7009EC7CC = {
+			isa = PBXGroup;
+			children = (
+				C4E76B8D1DCE75E7009EC7CC /* LoLGameTimers */,
+				C4E76B8C1DCE75E7009EC7CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4E76B8C1DCE75E7009EC7CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4E76B8B1DCE75E7009EC7CC /* LoLGameTimers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4E76B8D1DCE75E7009EC7CC /* LoLGameTimers */ = {
+			isa = PBXGroup;
+			children = (
+				C4E76B8E1DCE75E7009EC7CC /* AppDelegate.swift */,
+				C4E76B901DCE75E7009EC7CC /* ViewController.swift */,
+				C4E76B921DCE75E7009EC7CC /* Main.storyboard */,
+				C4E76B951DCE75E7009EC7CC /* Assets.xcassets */,
+				C4E76B971DCE75E7009EC7CC /* LaunchScreen.storyboard */,
+				C4E76B9A1DCE75E7009EC7CC /* Info.plist */,
+			);
+			path = LoLGameTimers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4E76B8A1DCE75E7009EC7CC /* LoLGameTimers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4E76B9D1DCE75E7009EC7CC /* Build configuration list for PBXNativeTarget "LoLGameTimers" */;
+			buildPhases = (
+				C4E76B871DCE75E7009EC7CC /* Sources */,
+				C4E76B881DCE75E7009EC7CC /* Frameworks */,
+				C4E76B891DCE75E7009EC7CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoLGameTimers;
+			productName = LoLGameTimers;
+			productReference = C4E76B8B1DCE75E7009EC7CC /* LoLGameTimers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4E76B831DCE75E7009EC7CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Bob De Kort";
+				TargetAttributes = {
+					C4E76B8A1DCE75E7009EC7CC = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3FX26JCU7E;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C4E76B861DCE75E7009EC7CC /* Build configuration list for PBXProject "LoLGameTimers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4E76B821DCE75E7009EC7CC;
+			productRefGroup = C4E76B8C1DCE75E7009EC7CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4E76B8A1DCE75E7009EC7CC /* LoLGameTimers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4E76B891DCE75E7009EC7CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4E76B991DCE75E7009EC7CC /* LaunchScreen.storyboard in Resources */,
+				C4E76B961DCE75E7009EC7CC /* Assets.xcassets in Resources */,
+				C4E76B941DCE75E7009EC7CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4E76B871DCE75E7009EC7CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4E76B911DCE75E7009EC7CC /* ViewController.swift in Sources */,
+				C4E76B8F1DCE75E7009EC7CC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C4E76B921DCE75E7009EC7CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4E76B931DCE75E7009EC7CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4E76B971DCE75E7009EC7CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4E76B981DCE75E7009EC7CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4E76B9B1DCE75E7009EC7CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4E76B9C1DCE75E7009EC7CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4E76B9E1DCE75E7009EC7CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3FX26JCU7E;
+				INFOPLIST_FILE = LoLGameTimers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bob-De-Kort.LoLGameTimers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C4E76B9F1DCE75E7009EC7CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3FX26JCU7E;
+				INFOPLIST_FILE = LoLGameTimers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bob-De-Kort.LoLGameTimers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4E76B861DCE75E7009EC7CC /* Build configuration list for PBXProject "LoLGameTimers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4E76B9B1DCE75E7009EC7CC /* Debug */,
+				C4E76B9C1DCE75E7009EC7CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4E76B9D1DCE75E7009EC7CC /* Build configuration list for PBXNativeTarget "LoLGameTimers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4E76B9E1DCE75E7009EC7CC /* Debug */,
+				C4E76B9F1DCE75E7009EC7CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4E76B831DCE75E7009EC7CC /* Project object */;
+}
