@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		408A59474D056D934A0AD563 /* Pods_LoLGameTimers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F2AC778B09755E47D551FE /* Pods_LoLGameTimers.framework */; };
 		C4E76B8F1DCE75E7009EC7CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E76B8E1DCE75E7009EC7CC /* AppDelegate.swift */; };
 		C4E76B911DCE75E7009EC7CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E76B901DCE75E7009EC7CC /* ViewController.swift */; };
 		C4E76B941DCE75E7009EC7CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E76B921DCE75E7009EC7CC /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		064C58F1DEF5C265A3C95306 /* Pods-LoLGameTimers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoLGameTimers.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoLGameTimers/Pods-LoLGameTimers.release.xcconfig"; sourceTree = "<group>"; };
+		26230AF1D9872C9D66369738 /* Pods-LoLGameTimers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoLGameTimers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoLGameTimers/Pods-LoLGameTimers.debug.xcconfig"; sourceTree = "<group>"; };
+		90F2AC778B09755E47D551FE /* Pods_LoLGameTimers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoLGameTimers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E76B8B1DCE75E7009EC7CC /* LoLGameTimers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoLGameTimers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E76B8E1DCE75E7009EC7CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4E76B901DCE75E7009EC7CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				408A59474D056D934A0AD563 /* Pods_LoLGameTimers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		222DF045832FF0B34606381D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26230AF1D9872C9D66369738 /* Pods-LoLGameTimers.debug.xcconfig */,
+				064C58F1DEF5C265A3C95306 /* Pods-LoLGameTimers.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C4E76B821DCE75E7009EC7CC = {
 			isa = PBXGroup;
 			children = (
 				C4E76B8D1DCE75E7009EC7CC /* LoLGameTimers */,
 				C4E76B8C1DCE75E7009EC7CC /* Products */,
+				222DF045832FF0B34606381D /* Pods */,
+				EF0AE40690C07C1608CE7492 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = LoLGameTimers;
 			sourceTree = "<group>";
 		};
+		EF0AE40690C07C1608CE7492 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90F2AC778B09755E47D551FE /* Pods_LoLGameTimers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4E76B9D1DCE75E7009EC7CC /* Build configuration list for PBXNativeTarget "LoLGameTimers" */;
 			buildPhases = (
+				E207AE2E023E7DAA5ECF7417 /* [CP] Check Pods Manifest.lock */,
 				C4E76B871DCE75E7009EC7CC /* Sources */,
 				C4E76B881DCE75E7009EC7CC /* Frameworks */,
 				C4E76B891DCE75E7009EC7CC /* Resources */,
+				2DD41D3337FF788962F10D6D /* [CP] Embed Pods Frameworks */,
+				495EB0DD02CE06276BD91410 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DD41D3337FF788962F10D6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoLGameTimers/Pods-LoLGameTimers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		495EB0DD02CE06276BD91410 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoLGameTimers/Pods-LoLGameTimers-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E207AE2E023E7DAA5ECF7417 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4E76B871DCE75E7009EC7CC /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		C4E76B9E1DCE75E7009EC7CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26230AF1D9872C9D66369738 /* Pods-LoLGameTimers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3FX26JCU7E;
@@ -272,6 +348,7 @@
 		};
 		C4E76B9F1DCE75E7009EC7CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 064C58F1DEF5C265A3C95306 /* Pods-LoLGameTimers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3FX26JCU7E;
