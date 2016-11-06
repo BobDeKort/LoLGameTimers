@@ -8,8 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		408A59474D056D934A0AD563 /* Pods_LoLGameTimers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F2AC778B09755E47D551FE /* Pods_LoLGameTimers.framework */; };
+		C48F88E41DCE7F1C00D05ADA /* APIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F88E31DCE7F1C00D05ADA /* APIWrapper.swift */; };
+		C48F88E71DCE809A00D05ADA /* CurrentPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F88E61DCE809A00D05ADA /* CurrentPlayer.swift */; };
+		C48F88E91DCE816000D05ADA /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F88E81DCE816000D05ADA /* Enums.swift */; };
+		C48F88EB1DCE94DE00D05ADA /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F88EA1DCE94DE00D05ADA /* LoadingViewController.swift */; };
+		C48F88EE1DCEA40900D05ADA /* ActiveGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F88ED1DCEA40900D05ADA /* ActiveGame.swift */; };
+		C48F88F01DCEA5E900D05ADA /* Participants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F88EF1DCEA5E900D05ADA /* Participants.swift */; };
 		C4E76B8F1DCE75E7009EC7CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E76B8E1DCE75E7009EC7CC /* AppDelegate.swift */; };
-		C4E76B911DCE75E7009EC7CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E76B901DCE75E7009EC7CC /* ViewController.swift */; };
+		C4E76B911DCE75E7009EC7CC /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E76B901DCE75E7009EC7CC /* ConnectViewController.swift */; };
 		C4E76B941DCE75E7009EC7CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E76B921DCE75E7009EC7CC /* Main.storyboard */; };
 		C4E76B961DCE75E7009EC7CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E76B951DCE75E7009EC7CC /* Assets.xcassets */; };
 		C4E76B991DCE75E7009EC7CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E76B971DCE75E7009EC7CC /* LaunchScreen.storyboard */; };
@@ -19,9 +25,15 @@
 		064C58F1DEF5C265A3C95306 /* Pods-LoLGameTimers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoLGameTimers.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoLGameTimers/Pods-LoLGameTimers.release.xcconfig"; sourceTree = "<group>"; };
 		26230AF1D9872C9D66369738 /* Pods-LoLGameTimers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoLGameTimers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoLGameTimers/Pods-LoLGameTimers.debug.xcconfig"; sourceTree = "<group>"; };
 		90F2AC778B09755E47D551FE /* Pods_LoLGameTimers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoLGameTimers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C48F88E31DCE7F1C00D05ADA /* APIWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIWrapper.swift; sourceTree = "<group>"; };
+		C48F88E61DCE809A00D05ADA /* CurrentPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentPlayer.swift; sourceTree = "<group>"; };
+		C48F88E81DCE816000D05ADA /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		C48F88EA1DCE94DE00D05ADA /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		C48F88ED1DCEA40900D05ADA /* ActiveGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveGame.swift; sourceTree = "<group>"; };
+		C48F88EF1DCEA5E900D05ADA /* Participants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Participants.swift; sourceTree = "<group>"; };
 		C4E76B8B1DCE75E7009EC7CC /* LoLGameTimers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoLGameTimers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E76B8E1DCE75E7009EC7CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C4E76B901DCE75E7009EC7CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4E76B901DCE75E7009EC7CC /* ConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
 		C4E76B931DCE75E7009EC7CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4E76B951DCE75E7009EC7CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4E76B981DCE75E7009EC7CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +61,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C48F88E51DCE807300D05ADA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C48F88E81DCE816000D05ADA /* Enums.swift */,
+				C48F88E61DCE809A00D05ADA /* CurrentPlayer.swift */,
+				C48F88ED1DCEA40900D05ADA /* ActiveGame.swift */,
+				C48F88EF1DCEA5E900D05ADA /* Participants.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C48F88EC1DCE94E200D05ADA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4E76B901DCE75E7009EC7CC /* ConnectViewController.swift */,
+				C48F88EA1DCE94DE00D05ADA /* LoadingViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		C4E76B821DCE75E7009EC7CC = {
 			isa = PBXGroup;
 			children = (
@@ -70,8 +102,10 @@
 		C4E76B8D1DCE75E7009EC7CC /* LoLGameTimers */ = {
 			isa = PBXGroup;
 			children = (
+				C48F88E51DCE807300D05ADA /* Model */,
+				C48F88E31DCE7F1C00D05ADA /* APIWrapper.swift */,
 				C4E76B8E1DCE75E7009EC7CC /* AppDelegate.swift */,
-				C4E76B901DCE75E7009EC7CC /* ViewController.swift */,
+				C48F88EC1DCE94E200D05ADA /* View Controllers */,
 				C4E76B921DCE75E7009EC7CC /* Main.storyboard */,
 				C4E76B951DCE75E7009EC7CC /* Assets.xcassets */,
 				C4E76B971DCE75E7009EC7CC /* LaunchScreen.storyboard */,
@@ -212,8 +246,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4E76B911DCE75E7009EC7CC /* ViewController.swift in Sources */,
+				C4E76B911DCE75E7009EC7CC /* ConnectViewController.swift in Sources */,
+				C48F88E41DCE7F1C00D05ADA /* APIWrapper.swift in Sources */,
+				C48F88E91DCE816000D05ADA /* Enums.swift in Sources */,
+				C48F88E71DCE809A00D05ADA /* CurrentPlayer.swift in Sources */,
 				C4E76B8F1DCE75E7009EC7CC /* AppDelegate.swift in Sources */,
+				C48F88EB1DCE94DE00D05ADA /* LoadingViewController.swift in Sources */,
+				C48F88EE1DCEA40900D05ADA /* ActiveGame.swift in Sources */,
+				C48F88F01DCEA5E900D05ADA /* Participants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +419,7 @@
 				C4E76B9F1DCE75E7009EC7CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

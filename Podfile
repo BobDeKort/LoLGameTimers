@@ -6,5 +6,6 @@ target 'LoLGameTimers' do
   use_frameworks!
 
   # Pods for LoLGameTimers
-	pod 'Alamofire', '~> 4.0'
+	pod 'Alamofire'
+	pod 'SwiftyJSON'
 end
