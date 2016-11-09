@@ -25,14 +25,24 @@ class APIWrapper {
                 return
             }
             
+            let response = response as? HTTPURLResponse
+            
+            if response?.statusCode == 404 {
+                print("Summoner not found")
+                return
+            }
+            
             let json = JSON(data: data)
-            print(json)
             let jsonQ = json[query]
             if let id = jsonQ["id"].int{
                 if let name = jsonQ["name"].string {
                     if let level = jsonQ["summonerLevel"].int {
                         self.player = CurrentPlayer(id: id, name: name, level: level, region: region)
-                             sender.player = self.player
+                            sender.player = self.player
+                            
+                            DispatchQueue.main.async {
+                                sender.showReadyButton()
+                            }
                         }
                     }
                 }
@@ -40,24 +50,29 @@ class APIWrapper {
         task.resume()
     }
     
-    
-    func getGameInfo(region: Regions, playerId: Int){
-        let urlString = "https://\(region.rawValue).api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/\(region.getPlatformId(region: region))/47360346?api_key=\(apiKey)"
+    func getGameInfo(region: Regions, playerId: Int, sender: LoadingViewController){
+        let urlString = "https://\(region.rawValue).api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/\(region.getPlatformId(region: region))/\(playerId)?api_key=\(apiKey)"
+        
         let url = URL(string: urlString)
         let task = URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
             guard let data = data else {
                 print("Data Error")
                 return
             }
+            let response = response as? HTTPURLResponse
+            
+            if response?.statusCode == 404 {
+                print("Game not found or Summoner is not online")
+                return
+            }
             
             let json = JSON(data: data)
-            self.parseGameData(json: json)
-
+            self.parseGameData(json: json, sender: sender)
         })
         task.resume()
     }
     
-    func parseGameData(json: JSON){
+    func parseGameData(json: JSON, sender: LoadingViewController){
         let id = json["gameId"].int
         let mapId = json["mapId"].int
         let gameMode = json["gameMode"].string
@@ -66,7 +81,8 @@ class APIWrapper {
         let enemyTeam = teams.1
         
         let game = ActiveGame(id: id!, mapId: mapId!, gameMode: gameMode!, enemyTeam: enemyTeam, friendlyTeam: frienlyTeam)
-        // return 
+        
+        sender.loadingGame = game
     }
     
     func getTeam(participants: [JSON]) -> ([Participant], [Participant]){
@@ -81,9 +97,7 @@ class APIWrapper {
                 enemyTeam.append(player)
             }
         }
-//        guard friendlyTeam.count == enemyTeam.count else {
-//            return ([nil], [nil])
-//        }
+        
         return (friendlyTeam, enemyTeam)
     }
 }

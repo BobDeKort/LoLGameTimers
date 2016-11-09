@@ -16,14 +16,20 @@ class LoadingViewController: UIViewController {
             print("player name: \(player?.summonerName)")
         }
     }
-    var currentGame: ActiveGame?{
+    var loadingGame: ActiveGame?{
         didSet{
             print("-------------------")
-            print (String(describing: currentGame?.gameId))
+            print (String(describing: loadingGame?.gameId))
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        apiWrapper.getGameInfo(region: Regions.northAm, playerId: (player?.summonerId)!, sender: self)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
+    
 }

@@ -11,11 +11,7 @@ import UIKit
 class ConnectViewController: UIViewController {
     
     let nextViewController = LoadingViewController()
-    var player: CurrentPlayer?{
-        didSet{
-            showReadyButton()
-        }
-    }
+    var player: CurrentPlayer?
     
     @IBOutlet weak var searchTextField: UITextField!
     
@@ -31,8 +27,7 @@ class ConnectViewController: UIViewController {
     
     @IBAction func readyButtonPressed(_ sender: Any) {
         if player != nil {
-            apiWrapper.getGameInfo(region: Regions.northAm, playerId: (player?.summonerId)!)
-            performSegue(withIdentifier: "toLoadingScreen", sender: self)
+            performSegue(withIdentifier: "toLoadingScreen", sender: self.readyButton)
         } else {
             print("----Error----")
         }
@@ -54,11 +49,17 @@ class ConnectViewController: UIViewController {
     
     func showReadyButton(){
         readyButton.isHidden = false
-        print("button is visable")
     }
     
     func hideReadyButton(){
         readyButton.isHidden = true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toLoadingScreen"{
+            let destinationVC = segue.destination as! LoadingViewController
+            destinationVC.player = player
+        }
     }
 }
 
